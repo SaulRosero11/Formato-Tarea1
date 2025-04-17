@@ -2,8 +2,10 @@
 
 class Program
 {
+
   static void Main()
   {
+    // Variable para controlar el ciclo del menu
     bool start = true;
 
     while (start)
@@ -15,17 +17,21 @@ class Program
       Console.WriteLine("0. Salir");
       Console.WriteLine("Selecciona una opción:");
 
+      // Leer la opción del usuario
       string option = Console.ReadLine() ?? "";
 
       switch (option)
       {
         case "1":
+          // Ejecutamos el Ejercicio1
           Ejercicio1.Menu();
           break;
         case "2":
+          // Ejecutamos el Ejercicio2
           Ejercicio2.Menu();
           break;
         case "0":
+          // Finalizamos el programa y salimos del ciclo del menu
           start = false;
           break;
         default:

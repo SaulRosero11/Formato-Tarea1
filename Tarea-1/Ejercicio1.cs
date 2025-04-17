@@ -6,8 +6,10 @@ using System.Diagnostics.CodeAnalysis;
 
 public static class Ejercicio1
 {
+  // Submenu del ejercicio 1 para poder ejecutar varias veces el mismo ejercicio
   public static void Menu()
   {
+    // Variable para controlar el ciclo del menu
     bool start = true;
 
     while (start)
@@ -23,11 +25,14 @@ public static class Ejercicio1
       switch (option)
       {
         case "1":
+          // Llamamos al metodo privado Ejecutar
           Ejecutar();
           Console.WriteLine("Opción no válida. Presiona [Enter] para intentar nuevamente.");
           Console.ReadLine();
           break;
         case "0":
+          // Finalizamos el ciclo y regresamos al menu principal
+          start = false;
           break;
         default:
           Console.WriteLine("Opción no válida. Presiona [Enter] para intentar nuevamente.");
@@ -39,52 +44,66 @@ public static class Ejercicio1
 
   private static void Ejecutar()
   {
-    Console.Clear();
-    Console.Write("Ingresa la ruta completa del archivo:");
-    string filePath = Console.ReadLine() ?? "";
-
+    // Declaracion de variables
     List<double> qualifications = new List<double>();
     double qualification;
     int maxStudents = 100;
     List<string> listError = new List<string>();
 
+    Console.Clear();
+    Console.Write("Ingresa la ruta completa del archivo:");
+    // Captura la ruta del archivo
+    string filePath = Console.ReadLine() ?? "";
+
+    // Validamos que el archivo exista
     if (!File.Exists(filePath))
     {
-      Console.WriteLine("el archivo no existe. verifica la ruta ingresada e intenalo de nuevo.");
+      Console.WriteLine("El archivo no existe. verifica la ruta ingresada e intenalo de nuevo.");
       return;
     }
 
     try
     {
-      using (StreamReader sr = new StreamReader(filePath))
+      // Extraemos la informacion del documento
+      string content = File.ReadAllText(filePath);
+      // Extraemos y generamos un arreglo con la información de las calficaciones
+      string[] values = content.Split(',');
+
+      // Validamos que la menos tenga 1 alumno para calcular el promedio
+      if (values[0] == "")
       {
-        string line;
-        while ((line = sr.ReadLine() ?? "") != null)
+        Console.WriteLine("Ingresa al menos una calificación para poder calcular el promedio.");
+        return;
+      }
+
+      // Recorremos el arreglo para validar cada numero y ver si cumple con los parametros
+      foreach (string value in values)
+      {
+        // Convertimos cada valor a numero
+        if (!double.TryParse(value.Trim(), NumberStyles.Float, CultureInfo.InvariantCulture, out qualification))
         {
-          if (!double.TryParse(line, NumberStyles.Float, CultureInfo.InvariantCulture, out qualification))
-          {
-            listError.Add($"Línea inválida: '{line}' no es número válido.");
-          }
+          listError.Add($"Valor no válido: '{value}'");
+        }
 
-          if (qualification == -50)
-            break;
+        // Validacion de que termina en -50 ya que es el ultimo numero
+        if (qualification == -50)
+          break;
 
-          if (qualification < 0 || qualification > 10)
-          {
-            listError.Add($"Nota fuera de rango (0-10): {qualification}");
-            break;
-          }
+        if (qualification < 0 || qualification > 10)
+        {
+          listError.Add($"Nota fuera de rango (0-10): {qualification}");
+        }
 
-          qualifications.Add(qualification);
+        qualifications.Add(qualification);
 
-          if (qualifications.Count > maxStudents)
-          {
-            listError.Add($"Se ha superado el número máximo de alumnos permitido (100). (Separe el documento)");
-            break;
-          }
+        if (qualifications.Count > maxStudents)
+        {
+          listError.Add($"Se ha superado el número máximo de alumnos permitido (100). (Separe el documento)");
+          break;
         }
       }
 
+      // Mostramos todos los errores que se encontraron en temas de validacion de calificaciones
       if (listError.Count > 0)
       {
         foreach (var e in listError)
@@ -95,7 +114,7 @@ public static class Ejercicio1
         return;
       }
 
-      MostrarPromedio(qualifications);
+      MostrarPromedio(qualifications); // Calculamos y mostramos el promedio
 
     }
     catch (Exception ex)
