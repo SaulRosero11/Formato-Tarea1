@@ -1,0 +1,14 @@
+C:\Users\NW\Documents\Universidad\Fundamentos\Semana 1\Ejercicios\Tarea-1\obj\Debug\net8.0\Tarea-1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NW\Documents\Universidad\Fundamentos\Semana 1\Ejercicios\Tarea-1\obj\Debug\net8.0\Tarea-1.AssemblyInfoInputs.cache
+C:\Users\NW\Documents\Universidad\Fundamentos\Semana 1\Ejercicios\Tarea-1\obj\Debug\net8.0\Tarea-1.AssemblyInfo.cs
+C:\Users\NW\Documents\Universidad\Fundamentos\Semana 1\Ejercicios\Tarea-1\obj\Debug\net8.0\Tarea-1.csproj.CoreCompileInputs.cache
+C:\Users\NW\Documents\Universidad\Fundamentos\Semana 1\Ejercicios\Tarea-1\bin\Debug\net8.0\Tarea-1.exe
+C:\Users\NW\Documents\Universidad\Fundamentos\Semana 1\Ejercicios\Tarea-1\bin\Debug\net8.0\Tarea-1.deps.json
+C:\Users\NW\Documents\Universidad\Fundamentos\Semana 1\Ejercicios\Tarea-1\bin\Debug\net8.0\Tarea-1.runtimeconfig.json
+C:\Users\NW\Documents\Universidad\Fundamentos\Semana 1\Ejercicios\Tarea-1\bin\Debug\net8.0\Tarea-1.dll
+C:\Users\NW\Documents\Universidad\Fundamentos\Semana 1\Ejercicios\Tarea-1\bin\Debug\net8.0\Tarea-1.pdb
+C:\Users\NW\Documents\Universidad\Fundamentos\Semana 1\Ejercicios\Tarea-1\obj\Debug\net8.0\Tarea-1.dll
+C:\Users\NW\Documents\Universidad\Fundamentos\Semana 1\Ejercicios\Tarea-1\obj\Debug\net8.0\refint\Tarea-1.dll
+C:\Users\NW\Documents\Universidad\Fundamentos\Semana 1\Ejercicios\Tarea-1\obj\Debug\net8.0\Tarea-1.pdb
+C:\Users\NW\Documents\Universidad\Fundamentos\Semana 1\Ejercicios\Tarea-1\obj\Debug\net8.0\Tarea-1.genruntimeconfig.cache
+C:\Users\NW\Documents\Universidad\Fundamentos\Semana 1\Ejercicios\Tarea-1\obj\Debug\net8.0\ref\Tarea-1.dll
