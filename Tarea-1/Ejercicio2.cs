@@ -54,7 +54,7 @@ public static class Ejercicio2
       if(counter > 0) {
         Console.WriteLine("Ingresa una palabra valida, debe tener al menos 2 caracteres:");
       } else {
-        Console.WriteLine("Ingresa una frase:");
+        Console.WriteLine("Ingresa una palabra:");
       }
 
       word = Console.ReadLine() ?? "";

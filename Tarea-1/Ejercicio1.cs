@@ -26,7 +26,7 @@ public static class Ejercicio1
       {
         case "1":
           // Llamamos al metodo privado Ejecutar
-          Ejecutar();
+          Execute();
           Console.WriteLine("Presiona [Enter] para continuar.");
           Console.ReadLine();
           break;
@@ -42,7 +42,7 @@ public static class Ejercicio1
     }
   }
 
-  private static void Ejecutar()
+  private static void Execute()
   {
     // Declaracion de variables
     List<double> qualifications = new List<double>();
@@ -114,7 +114,7 @@ public static class Ejercicio1
         return;
       }
 
-      MostrarPromedio(qualifications); // Calculamos y mostramos el promedio
+      ViewAverage(qualifications); // Calculamos y mostramos el promedio
 
     }
     catch (Exception ex)
@@ -123,7 +123,7 @@ public static class Ejercicio1
     }
   }
 
-  private static void MostrarPromedio(List<double> qualifications)
+  private static void ViewAverage(List<double> qualifications)
   {
     if (qualifications.Count == 0)
     {
@@ -131,11 +131,11 @@ public static class Ejercicio1
       return;
     }
 
-    double suma = 0;
+    double sum = 0;
     foreach (var n in qualifications)
-      suma += n;
+      sum += n;
 
-    double media = suma / qualifications.Count;
-    Console.WriteLine($"El promedio es: {media:F2}");
+    double average = sum / qualifications.Count;
+    Console.WriteLine($"El promedio es: {average:F2}");
   }
 }
