@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Wp5cGlDZ+hQ=",
+  "dgSpecHash": "WjXus5iDV9M=",
   "success": true,
-  "projectFilePath": "C:\\Users\\NW\\Documents\\Universidad\\Fundamentos\\Semana 1\\Ejercicios\\Tarea-1\\Tarea-1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/anthonyrosero/Desktop/Universidad/Fundamentos/Semana 1/Formato-Tarea1/Tarea-1/Tarea-1.csproj",
+  "expectedPackageFiles": [
+    "/Users/anthonyrosero/.nuget/packages/microsoft.netcore.app.ref/8.0.15/microsoft.netcore.app.ref.8.0.15.nupkg.sha512",
+    "/Users/anthonyrosero/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.15/microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512",
+    "/Users/anthonyrosero/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.15/microsoft.netcore.app.host.osx-arm64.8.0.15.nupkg.sha512"
+  ],
   "logs": []
 }

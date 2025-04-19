@@ -27,7 +27,7 @@ public static class Ejercicio1
         case "1":
           // Llamamos al metodo privado Ejecutar
           Ejecutar();
-          Console.WriteLine("Opción no válida. Presiona [Enter] para intentar nuevamente.");
+          Console.WriteLine("Presiona [Enter] para continuar.");
           Console.ReadLine();
           break;
         case "0":

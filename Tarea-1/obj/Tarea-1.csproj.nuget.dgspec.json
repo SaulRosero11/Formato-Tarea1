@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NW\\Documents\\Universidad\\Fundamentos\\Semana 1\\Ejercicios\\Tarea-1\\Tarea-1.csproj": {}
+    "/Users/anthonyrosero/Desktop/Universidad/Fundamentos/Semana 1/Formato-Tarea1/Tarea-1/Tarea-1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NW\\Documents\\Universidad\\Fundamentos\\Semana 1\\Ejercicios\\Tarea-1\\Tarea-1.csproj": {
+    "/Users/anthonyrosero/Desktop/Universidad/Fundamentos/Semana 1/Formato-Tarea1/Tarea-1/Tarea-1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NW\\Documents\\Universidad\\Fundamentos\\Semana 1\\Ejercicios\\Tarea-1\\Tarea-1.csproj",
+        "projectUniqueName": "/Users/anthonyrosero/Desktop/Universidad/Fundamentos/Semana 1/Formato-Tarea1/Tarea-1/Tarea-1.csproj",
         "projectName": "Tarea-1",
-        "projectPath": "C:\\Users\\NW\\Documents\\Universidad\\Fundamentos\\Semana 1\\Ejercicios\\Tarea-1\\Tarea-1.csproj",
-        "packagesPath": "C:\\Users\\NW\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NW\\Documents\\Universidad\\Fundamentos\\Semana 1\\Ejercicios\\Tarea-1\\obj\\",
+        "projectPath": "/Users/anthonyrosero/Desktop/Universidad/Fundamentos/Semana 1/Formato-Tarea1/Tarea-1/Tarea-1.csproj",
+        "packagesPath": "/Users/anthonyrosero/.nuget/packages/",
+        "outputPath": "/Users/anthonyrosero/Desktop/Universidad/Fundamentos/Semana 1/Formato-Tarea1/Tarea-1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\NW\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/anthonyrosero/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,7 +37,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -55,12 +54,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

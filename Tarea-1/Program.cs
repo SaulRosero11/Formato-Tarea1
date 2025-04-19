@@ -2,7 +2,6 @@
 
 class Program
 {
-
   static void Main()
   {
     // Variable para controlar el ciclo del menu
